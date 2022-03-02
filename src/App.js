@@ -15,6 +15,7 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="shop" element={<Shop />} />
         <Route path="sing_up" element={<SingUp />} />
+        <Route path="*" element={<Error404 />} />
       </Route>
     </Routes>
   </BrowserRouter>
