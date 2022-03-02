@@ -1,0 +1,14 @@
+#!/bin/bash
+# script for dependencies for react and node.js BB!
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+if [[ -f "~/.bashrc" ]]; then 
+  source ~/.bashrc
+fi
+test=`nvm -v`
+if [[ "${#test}" -gt 0 ]]; then
+  nvm install v16.14.0
+fi
+npm install -g npm@8.5.2 
+sudo npm -g install create-react-app
+npm i tar
+#npx create-react-app .
